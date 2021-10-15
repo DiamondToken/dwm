@@ -948,8 +948,10 @@ drawbars(void)
 {
 	Monitor *m;
 
-	for (m = mons; m; m = m->next)
+	for (m = mons; m; m = m->next){
 		drawbar(m);
+        updatesystray();
+    }
 }
 
 void
