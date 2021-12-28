@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const int startwithgaps[] = { 0 };
+static const int startwithgaps[] = { 10 };
 static const unsigned int gappx[] = { 10 };
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
@@ -13,10 +13,10 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Iosevka Extended:size=18" };
-static const char dmenufont[]       = "Iosevka Extended:size=18";
+static const char *fonts[]          = { "Iosevka Extended:size=20" };
+static const char dmenufont[]       = "Iosevka Extended:size=20";
 static const char col_gray1[]       = "#002b36";
-static const char col_gray2[]       = "#282828";
+static const char col_gray2[]       = "#073642";
 static const char col_gray3[]       = "#839496";
 static const char col_gray4[]       = "#839496";
 static const char col_cyan[]        = "#073642";
@@ -40,13 +40,14 @@ static const Rule rules[] = {
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "st",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ NULL,      NULL,     "nnn",          0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
