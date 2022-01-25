@@ -18,8 +18,8 @@ static const char dmenufont[]       = "Iosevka Extended:size=20";
 static const char col_gray1[]       = "#002b36";
 static const char col_gray2[]       = "#073642";
 static const char col_gray3[]       = "#839496";
-static const char col_gray4[]       = "#839496";
-static const char col_cyan[]        = "#073642";
+static const char col_gray4[]       = "#073642";
+static const char col_cyan[]        = "#b58900";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
