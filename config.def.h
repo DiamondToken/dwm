@@ -41,6 +41,7 @@ static const Rule rules[] = {
 	{ "firefox", NULL,     NULL,           1 << 0,    0,          0,          -1,        -1 },
 	{ "TelegramDesktop", NULL, NULL,       1 << 6,    0,          0,          -1,        -1 },
 	{ "st",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "discord", NULL,     NULL,           1 << 8,         0,          1,           0,    1 },
 	{ NULL,      NULL,     "nnn",          0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
@@ -48,7 +49,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 0; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
