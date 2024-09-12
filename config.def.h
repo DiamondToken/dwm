@@ -16,7 +16,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Iosevka Nerd Font Mono:size=14" };
 static const char dmenufont[]       = "Iosevka Nerd Font Mono:size=14";
-static const char col_gray1[]       = "#282828";
+static const char col_gray1[]       = "#f9f5d7";
 static const char col_gray2[]       = "#504945";
 static const char col_gray3[]       = "#a89984";
 static const char col_gray4[]       = "#fbf1c7";
